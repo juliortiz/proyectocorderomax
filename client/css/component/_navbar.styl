@@ -15,7 +15,6 @@
         img
             padding: .2em .5em
 .nav-bar
-    border: 1px solid peru
     position: fixed
     bottom: 0
     background-color: _c-header
@@ -39,3 +38,20 @@
         padding: .75em .5em
         color: _c-white
         font-weight: 300
+
+
+@media screen and (min-width 40em)
+
+    .logo
+        &__img
+            max-width: 8em
+    
+    .nav-bar
+        position: initial
+        max-width: 15em
+        margin-left: auto
+        padding-bottom: 1em
+        background-color: transparent
+
+    .phone
+        margin-left: 3em
