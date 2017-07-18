@@ -1,12 +1,11 @@
 .sacos
     max-width: 75em
-
     &__group
         margin-top: 2em
         display: flex
         flex-wrap: wrap
         justify-content: space-around
-        align-items: center
+        align-items: flex-start
     &__item
         max-width: 19em
         display: flex
@@ -14,15 +13,36 @@
         align-items: center
         margin-bottom: 5em
         padding: 0 2em
+        &--type1
+            padding: 0
     &__title
         background-color: _c-header
-        width: 100%
         text-align: center
         color: _c-white
         text-transform: uppercase
         font-weight: 300
-        padding: .7em 0
+        width: 85%
+        padding: .7em .5em
         border-radius: 0 0 10px 10px
+        &--top
+            border-radius: 10px 10px 0 0
+            margin-bottom: .5em
+            width: 100%
+    &__data
+        font-family: 'Oswald' , sans-serif
+        h2
+            color: _c-orange
+            font-size: 1em
+            margin-bottom: .5em
+        .row
+            display: flex
+            margin-bottom: .5em
+            font-size: .9em
+            .left
+                color: _c-gray-charset
+                min-width: 4em
+            .right
+                color: _c-gray-data
 
 @media screen and (min-width 40em)
     .sacos__item

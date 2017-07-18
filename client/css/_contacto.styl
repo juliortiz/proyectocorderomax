@@ -1,0 +1,24 @@
+.contacto
+    padding-bottom: 4em
+    &__title
+        text-transform: uppercase
+        color: _c-white
+        font-weight: 400
+        display: flex
+        justify-content: center
+    .left
+        padding: 0 1em
+        margin:  0 auto
+    
+    .right
+        display: none
+
+@media screen and (min-width 44em)
+    .contacto
+        display: flex
+        flex-wrap: wrap
+        .right
+            display: block
+            padding: 0 1em
+            margin:  0 auto
+            max-width: 24em
