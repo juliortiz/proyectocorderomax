@@ -1,3 +1,5 @@
+body
+    margin-bottom: 3em
 .wrapper
     max-width: 75em
     margin: 0 auto
@@ -19,3 +21,12 @@
         text-transform: uppercase
         color: _c-header
         text-align: center
+    &--s-padding-horizontal
+        padding-right: 0
+        padding-left: 0
+    &--s-padding-bottom
+        padding-bottom: 0
+
+@media screen and (min-width 40em)
+    body
+        margin-bottom: 0
