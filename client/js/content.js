@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-	console.log("Hi there! sssss:)")
+	console.log("Hi there! sssss:");
 });
 
-$(document).ready(function() {
-	console.log("JEJE XD");
 
+
+
+$(document).ready(function() {
+	//FlexSlider
 	$('.flexslider').flexslider({
 		animation: "slide"
 	});
-
 });
-
 

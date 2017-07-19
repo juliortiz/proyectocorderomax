@@ -3,7 +3,8 @@
 <head>
 	<title>Sacos Cordero Max - tipos de sacos de polipropileno</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
 </head>
 <body>
 	<header class="header">
@@ -309,17 +310,21 @@
                             <h2 class="contacto__title">escribénos</h2>
                             <form class="form">
                                 <label class="form__label" for="nombre">Nombre</label>
+                                <div id="c_nombreerror"></div>
                                 <input class="form__input" type="text" name="nombre" id="c_nombre">
 
                                 <label class="form__label" for="email">Email</label>
+                                <div id="c_emailerror"></div>
                                 <input class="form__input" type="email" name="email" id="c_email">
 
                                 <label class="form__label" for="telefono">Teléfono</label>
+                                <div id="c_telefonoerror"></div>
                                 <input class="form__input" type="number" name="telefono" id="c_telefono">
 
                                 <label class="form__label" for="mensaje">Mensaje</label>
                                 <textarea class="form__txtarea" name="mensaje" id="c_mensaje"></textarea>
-                                <input class="form__button" type="button" name="send" onclick="cargaSendMail()" value="Enviar" id="c_enviar">
+                                <input class="form__button" type="button" name="send" onclick="mail()" value="Enviar" id="c_enviar">
+                                <div id="c_information" class="hide"><p></p></div>
                             </form>
                         </div>
                     </div>
@@ -362,7 +367,7 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/jquery.flexslider.js" ></script>
-	<script type="text/javascript" src="js/bundle.js" ></script>
+    <script type="text/javascript" src="js/bundle.js" ></script>
+    <script type="text/javascript" src="js/email.js" ></script>
 </body>
 </html>
