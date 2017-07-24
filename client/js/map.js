@@ -11,7 +11,7 @@ function iniciar() {
     var marca1 = new google.maps.Marker({
             position: ubirmsl,
             map: mapa,
-            title: 'Raul Motors'
+            title: 'Inversiones Cordero Max E.I.R.L.'
         });
 
     function MostrarInfoSl() {
@@ -40,7 +40,7 @@ function iniciar() {
 
     function MostrarInfoDa() {
         var infowindow = new google.maps.InfoWindow({
-            content: 'Raul Motors DA'
+            content: 'Inversiones Cordero Max E.I.R.L.'
         });
 
         infowindow.open(mapa2,marca2);

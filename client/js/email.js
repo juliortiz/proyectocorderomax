@@ -15,7 +15,6 @@ function mail(){
         $('#c_emailerror').after("<p class='c_error' id='c_error_mail'>Ingrese e-mail valido.</p>");
         sendMail = "false";
     }
-    console.log("FFF");
     if (s_nombre.length == 0 ){
             $('#c_nombreerror').after( "<p class='c_error' id='c_error_name'>Ingrese su nombre.</p>" );
             var sendMail = "false";
